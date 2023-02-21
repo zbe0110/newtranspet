@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/settingimge"
+        android:layout_width="36dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sannybg"
+        app:srcCompat="@drawable/brightness" />
+
+    <ImageView
+        android:id="@+id/personnelimge"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="112dp"
+        app:layout_constraintEnd_toStartOf="@+id/settingimge"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/headphone" />
+
+    <ImageView
+        android:id="@+id/historyimge"
+        android:layout_width="36dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toEndOf="@+id/likeimge"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/file" />
+
+    <ImageView
+        android:id="@+id/likeimge"
+        android:layout_width="36dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/ilike"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sannybg"
+        app:srcCompat="@drawable/collection" />
+
+    <TextView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="50dp"
+        android:text="系统设置"
+        android:textColor="@color/orange"
+        app:layout_constraintBottom_toTopOf="@+id/modulepet1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/personnel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="50dp"
+        android:text="客服热线"
+        android:textColor="@color/orange"
+        app:layout_constraintBottom_toTopOf="@+id/modulepet1"
+        app:layout_constraintStart_toEndOf="@+id/history" />
+
+    <TextView
+        android:id="@+id/history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="50dp"
+        android:text="历史订单"
+        android:textColor="@color/orange"
+        app:layout_constraintBottom_toTopOf="@+id/modulepet1"
+        app:layout_constraintStart_toEndOf="@+id/ilike" />
+
+    <TextView
+        android:id="@+id/ilike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="13dp"
+        android:text="我的收藏"
+        android:textColor="@color/orange"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/likeimge" />
+
+    <TextView
+        android:id="@+id/petinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="11dp"
+        android:text="宠物信息卡"
+        app:layout_constraintBottom_toTopOf="@+id/modulepet1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/sannybg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="26dp"
+        android:scaleX="1.3"
+        android:scaleY="1.3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sannybg" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="81dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sannybg"
+        app:srcCompat="@drawable/sanny" />
+
+    <TextView
+        android:id="@+id/sannyname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Sanny"
+        android:textSize="18dp"
+        android:textColor="@color/deepbrown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="44dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toStartOf="@+id/settingimge"
+        app:layout_constraintTop_toBottomOf="@+id/sannybg"
+        app:srcCompat="@drawable/chattingicon" />
+
+    <TextView
+        android:id="@+id/chatname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:text="对接用户"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toStartOf="@+id/settings"
+        app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+
+    <LinearLayout
+        android:id="@+id/modulepet1"
+        android:layout_width="370dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/rectangle"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sannyname"
+        tools:ignore="MissingConstraints" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/weight1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="28dp"
+                android:text="体重：27kg"
+                android:textSize="13dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/qr1" />
+
+            <TextView
+                android:id="@+id/age1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="56dp"
+                android:text="年龄：18个月"
+                android:textSize="13dp"
+                app:layout_constraintStart_toEndOf="@+id/cate1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/length1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="28dp"
+                android:text="身长：66cm"
+                android:textSize="13dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pet1" />
+
+            <TextView
+                android:id="@+id/petname1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="83dp"
+                android:text="姓名：Lucky"
+                android:textSize="13dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pet1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/cate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="55dp"
+                android:text="种类：金毛犬"
+                android:textSize="13dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pet1" />
+
+            <ImageView
+                android:id="@+id/qr1"
+                android:layout_width="61dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="36dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/qr2" />
+
+            <ImageView
+                android:id="@+id/pet1"
+                android:layout_width="73dp"
+                android:layout_height="74dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="28dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/pet1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/modulepet2"
+        android:layout_width="370dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rectangle"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modulepet1"
+        tools:ignore="MissingConstraints" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/weight2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="28dp"
+                android:text="体重：7.6kg"
+                android:textSize="13dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/qr2" />
+
+            <TextView
+                android:id="@+id/length2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginBottom="28dp"
+                android:text="身长：27cm"
+                android:textSize="13dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pet2" />
+
+            <TextView
+                android:id="@+id/age2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="7dp"
+                android:text="年龄：15个月"
+                android:textSize="13dp"
+                app:layout_constraintEnd_toStartOf="@+id/qr2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/cate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="11dp"
+                android:text="种类：巴哥犬"
+                android:textSize="13dp"
+                app:layout_constraintStart_toEndOf="@+id/pet2"
+                app:layout_constraintTop_toBottomOf="@+id/petname2" />
+
+            <TextView
+                android:id="@+id/petname2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="27dp"
+                android:text="姓名：Tom"
+                android:textSize="13dp"
+                app:layout_constraintStart_toEndOf="@+id/pet2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/pet2"
+                android:layout_width="75dp"
+                android:layout_height="77dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginBottom="26dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/pet2" />
+
+            <ImageView
+                android:id="@+id/qr2"
+                android:layout_width="61dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="36dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/qr1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/dock"
+        android:layout_width="390dp"
+        android:layout_height="75dp"
+        android:background="@drawable/dockbg"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/shouye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="74dp"
+                android:layout_marginBottom="13dp"
+                android:text="首页"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="74dp"
+                android:layout_marginBottom="13dp"
+                android:text="我的"
+                android:textColor="@color/orange"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="74dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/person" />
+
+            <ImageView
+                android:id="@+id/barcon"
+                android:layout_width="22dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="83dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="80dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView15"
+                app:layout_constraintStart_toEndOf="@+id/homecon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/project" />
+
+            <ImageView
+                android:id="@+id/homecon"
+                android:layout_width="27dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="74dp"
+                android:layout_marginTop="11dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/home" />
+
+            <TextView
+                android:id="@+id/bargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="78dp"
+                android:layout_marginEnd="79dp"
+                android:layout_marginBottom="13dp"
+                android:text="订单"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/mine"
+                app:layout_constraintStart_toEndOf="@+id/shouye" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

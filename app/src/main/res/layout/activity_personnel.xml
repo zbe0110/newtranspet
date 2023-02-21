@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/toprectangle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/personneltitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="在线客服"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/personnelstate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="人工客服在线中"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/personnelturn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            app:srcCompat="@drawable/left_msg" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="47dp"
+                android:background="@drawable/newrectangle"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView10"
+                tools:ignore="MissingConstraints">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/servicecate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="请选择您要咨询的服务类型"
+                        android:textColor="@color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="105dp"
+                        android:layout_height="47dp"
+                        android:layout_marginStart="29dp"
+                        android:layout_marginTop="11dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/servicecate"
+                        app:srcCompat="@drawable/zhuanyun" />
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="106dp"
+                        android:layout_height="46dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginEnd="33dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/servicecate"
+                        app:srcCompat="@drawable/anzhi" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/systemnotice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:text="查询到您近期的订单："
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="21dp" />
+
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="22dp"
+                android:background="@drawable/newrectangle2"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/systemnotice"
+                tools:ignore="MissingConstraints">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="87dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="7dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/pet1" />
+
+                    <TextView
+                        android:id="@+id/dingdanhao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="订单号：759254"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="12dp"
+                        android:text="北京市"
+                        android:textColor="@color/deepbrown"
+                        android:textSize="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/dingdanhao" />
+
+                    <TextView
+                        android:id="@+id/startper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="39dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Sanny"
+                        android:textColor="@color/deepbrown"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/start" />
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="72dp"
+                        android:layout_height="31dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="45dp"
+                        app:layout_constraintStart_toEndOf="@+id/start"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/arrow1" />
+
+                    <TextView
+                        android:id="@+id/end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginEnd="17dp"
+                        android:text="广州市"
+                        android:textColor="@color/deepbrown"
+                        android:textSize="20dp"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView13"
+                        app:layout_constraintStart_toEndOf="@+id/imageView14"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/endper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="32dp"
+                        android:text="Dory"
+                        android:textColor="@color/deepbrown"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView13"
+                        app:layout_constraintTop_toBottomOf="@+id/end" />
+
+                    <TextView
+                        android:id="@+id/zhuangtai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginEnd="110dp"
+                        android:text="进行中"
+                        android:textColor="@color/orange"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView13"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/yuji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="12dp"
+                        android:text="预计送达时间： 2023-01-19"
+                        android:textColor="@color/deepbrown"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/startper" />
+
+                    <TextView
+                        android:id="@+id/dangqian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="9dp"
+                        android:text="当前所在地：湖南长沙"
+                        android:textColor="@color/deepbrown"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/yuji" />
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="95dp"
+                        android:layout_height="29dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="12dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/contactwho" />
+
+                    <ImageView
+                        android:id="@+id/imageView17"
+                        android:layout_width="96dp"
+                        android:layout_height="29dp"
+                        android:layout_marginStart="127dp"
+                        android:layout_marginBottom="12dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/contactwhere" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/msg_recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/inputMessage_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.sunnyweather.newtranspet.LastInputEditText
+            android:id="@+id/edit_search"
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_petinfo"
+            android:gravity="center_vertical"
+            android:hint="请输入您要咨询或投诉的问题"
+            android:imeOptions="actionSend"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true"
+            android:textColor="#333"
+            android:textColorHint="#ccc"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/send_image"
+            android:layout_width="67dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/circle" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

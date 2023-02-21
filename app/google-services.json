@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "572626671334",
+    "project_id": "newtranspet-8f458",
+    "storage_bucket": "newtranspet-8f458.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572626671334:android:4e729d0c2e063818624d27",
+        "android_client_info": {
+          "package_name": "com.sunnyweather.newtranspet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572626671334-fv0dlh9m2tvbb7ttejrq9jf1ptvo38h4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrzVxlX3SKkKWyRfam19oXhm5954wRkow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572626671334-fv0dlh9m2tvbb7ttejrq9jf1ptvo38h4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

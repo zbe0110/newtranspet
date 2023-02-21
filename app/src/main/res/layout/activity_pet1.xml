@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_pet1">
+
+    <LinearLayout
+        android:id="@+id/modulepet1"
+        android:layout_width="370dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petinfo_title"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/weight1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="28dp"
+                android:text="体重：27kg"
+                android:textSize="13dp"
+                android:textColor="@color/deepbrown"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/qr1" />
+
+            <TextView
+                android:id="@+id/age1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="56dp"
+                android:text="年龄：18个月"
+                android:textSize="13dp"
+                android:textColor="@color/deepbrown"
+                app:layout_constraintStart_toEndOf="@+id/cate1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/length1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="28dp"
+                android:text="身长：66cm"
+                android:textSize="13dp"
+                android:textColor="@color/deepbrown"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pet1" />
+
+            <TextView
+                android:id="@+id/petname1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="83dp"
+                android:text="姓名：Lucky"
+                android:textSize="13dp"
+                android:textColor="@color/deepbrown"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pet1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/cate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="55dp"
+                android:text="种类：金毛犬"
+                android:textSize="13dp"
+                android:textColor="@color/deepbrown"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pet1" />
+
+            <ImageView
+                android:id="@+id/qr1"
+                android:layout_width="61dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="36dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/qr2" />
+
+            <ImageView
+                android:id="@+id/pet1"
+                android:layout_width="73dp"
+                android:layout_height="74dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="28dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/pet1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pet1turn"
+        android:layout_width="27dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="348dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left_msg" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="116dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modulepet1"
+        app:srcCompat="@drawable/pet1" />
+
+    <TextView
+        android:id="@+id/petinfo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="144dp"
+        android:text="宠物信息卡"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/petname_rep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="116dp"
+        android:text="姓名：Lucky"
+        android:textSize="17dp"
+        android:textColor="@color/deepbrown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modulepet1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/petill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:text="病史：左后小腿先天残疾"
+        android:textSize="17dp"
+        android:textColor="@color/deepbrown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petname_rep"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/pettemper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="9dp"
+        android:text="性格：胆小内向，畏惧生人"
+        android:textSize="17dp"
+        android:textColor="@color/deepbrown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petill"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="205dp"
+        android:layout_height="347dp"
+        android:layout_marginStart="-39dp"
+        android:layout_marginBottom="-30dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/petill"
+        app:srcCompat="@drawable/ellipse_big"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/remarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="8dp"
+        android:text="主人的备注："
+        android:textColor="@color/deepbrown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pettemper" />
+
+    <LinearLayout
+        android:id="@+id/memo"
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginBottom="185dp"
+        android:background="@drawable/rectangle"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/remarks_content"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:text="Lucky胆子很小，因左后小腿先天残疾，希望能在运输过程中对运输箱轻拿轻放"
+                android:textSize="12dp"
+                android:textColor="@color/deepbrown"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="71dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/qr2" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="165dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/editor" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
